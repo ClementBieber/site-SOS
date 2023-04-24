@@ -1,0 +1,22 @@
+
+
+.wrapper{
+  margin: 0 10vw;
+}
+
+.mission-title{
+  text-align: center;
+  width: 100%;
+}
+
+.mission-presentation{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 3%;
+}
+
+.mission-points{
+  width: 30%;
+  min-width: 300px;
+}
