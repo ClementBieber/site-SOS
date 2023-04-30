@@ -129,6 +129,7 @@ body{
 
 .hamburger-menu{
     width: 7vw;
+    margin-right: 3vw;
 }
 
 #menu__toggle {
@@ -151,7 +152,7 @@ body{
 }
 .menu__btn {
     display: inline-block;
-    width: 80%;
+    width: 100%;
     position: relative;
     top: 15%;
     cursor: pointer;
