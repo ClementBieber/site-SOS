@@ -17,21 +17,40 @@
 
         <!-- Logo -->
         <div class="logo">
-            <a href="">
+            <a href="./">
                 <img src="img/logo_.png"  alt="Logo SOS Attitude"/>
             </a>
         </div>
 
         <!-- Navigation Menu -->
-        <nav role="navigation" class="nav-bar">
+        <nav role="navigation" class="nav-bar nav-bar-main">
             <ul>
-                <li class="active"><a href="#" title="Go to the homepage" aria-label="Go to the homepage">Home</a></li>
-                <li><a href="#" title="See the actions" aria-label="See the actions">About Us</a></li>
-                <li><a href="#" title="Read the news" aria-label="Read the news">Partners</a></li>
-                <li><a href="#" title="Make a donation" aria-label="Make a donation">Help Us</a></li>
-                <li class="donate-button"><a href="#" title="Make a donation" aria-label="Make a donation">Donate</a></li>
+                <li class="active"><a href="./" title="Go to the homepage" aria-label="Go to the homepage">Home</a></li>
+                <li><a href="about_us.html" title="See the actions" aria-label="See the actions">About Us</a></li>
+                <li><a href="entreprise.html" title="Entreprise" aria-label="Entreprise section">Entreprise</a></li>
+                <li><a href="#" title="Partners & Material" aria-label="See our partners and material">Partners & Material</a></li>
+                <li class="donate-button"><a href="donnate.html" title="Make a donation" aria-label="Make a donation">Donate</a></li>
             </ul>
         </nav>
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <nav role="navigation" class="nav-bar">
+                    <ul>
+                        <li class="active"><a href="./" title="Go to the homepage" aria-label="Go to the homepage">Home</a></li>
+                        <li><a href="about_us.html" title="See the actions" aria-label="See the actions">About Us</a></li>
+                        <li><a href="entreprise.html" title="Entreprise" aria-label="Entreprise section">Entreprise</a></li>
+                        <li><a href="#" title="Partners & Material" aria-label="See our partners and material">Partners & Material</a></li>
+                        <li><a href="donnate.html" title="Make a donation" aria-label="Make a donation">Donate</a></li>
+                    </ul>
+                </nav>
+            </ul>
+        </div>
 
     </div>
 
@@ -54,63 +73,84 @@
         </div>
     </section>
 
-    <section class="bandeau-page">
-        <div class="bandeau-text">
-            <h1>
-                Meet SOS Attitude
-            </h1>
-        </div>
-    </section>
+    <div class="page-background">
 
-    <!-- Section 1 of Main content -->
-    <section class="HP-presentation-text">
+        <section class="bandeau-page">
+            <div class="bandeau-text">
+                <h1>
+                    Meet SOS Attitude
+                </h1>
+            </div>
+        </section>
 
-        <div class="text-container">
-            <img src="img/icons/reshot-icon-holding-money.svg">
-            <h2>100% of donations on the field</h2>
-            <p>We are a private agency of unpaid volonteers, and all the costs of functioning are covered by the members.
-                This means that we guaranty that all the donations we receive are only used to cover missions fees.
-                Learn more about <a href="">our organisation</a>.
-            </p>
-        </div>
+        <!-- Section 1 of Main content -->
+        <section class="HP-presentation-text">
 
-        <div class="text-container">
-            <h2>Who are we ?</h2>
-            <p>We are a private agency of unpaid volonteers. All our members constitute a breeding ground of people who participate to our missions.</p>
+            <div class="text-container">
+                <div class="icon-title-container">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 17V16.9929M12 14.8571C12 11.6429 15 12.3571 15 9.85714C15 8.27919 13.6568 7 12 7C10.6567 7 9.51961 7.84083 9.13733 9M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#fd7800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2>Who are we ?</h2>
+                </div>
+                <p>We are a private agency of unpaid volonteers. All our members constitute a breeding ground of people who
+                    participate to our missions.<br>
+                    Learn more <a href="about_us.html">about us</a>.
+                </p>
+            </div>
 
-        </div>
+            <div class="text-container">
+                <div class="icon-title-container">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="#fd7800" stroke-width="1.5"/>
+                        <path d="M15 9.94728C14.5 9.3 13.8 8.5 12 8.5C10.2 8.5 9 9.51393 9 9.94728C9 10.3806 9.06786 10.9277 10 11.5C10.7522 11.9618 12.6684 12.0439 13.5 12.5C14.679 13.1467 14.8497 13.8202 14.8497 14.0522C14.8497 14.6837 13.4175 15.4852 12 15.5C10.536 15.5153 9.5 14.7 9 14.0522" stroke="#fd7800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 7V17" stroke="#fd7800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2>All donations goes on the field</h2>
+                </div>
+                <p>We are a private agency of unpaid volunteers, and all the costs of functioning are covered by the members.
+                    This means that we guaranty that all the donations we receive are only used to cover missions fees. <br>
+                    Check out how we use the <a href="donnate.html">donations</a>.
+                </p>
+            </div>
 
+            <div class="text-container">
+                <div class="icon-title-container">
+                    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="#fd7800" stroke-width="1.5"/>
+                        <path d="M15 9.94728C14.5 9.3 13.8 8.5 12 8.5C10.2 8.5 9 9.51393 9 9.94728C9 10.3806 9.06786 10.9277 10 11.5C10.7522 11.9618 12.6684 12.0439 13.5 12.5C14.679 13.1467 14.8497 13.8202 14.8497 14.0522C14.8497 14.6837 13.4175 15.4852 12 15.5C10.536 15.5153 9.5 14.7 9 14.0522" stroke="#fd7800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 7V17" stroke="#fd7800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h2>Discover our team building events</h2>
+                </div>
+                <p>We are a private agency of unpaid volunteers, and all the costs of functioning are covered by the members.
+                    This means that we guaranty that all the donations we receive are only used to cover missions fees. <br>
+                    Check out how we use the <a href="donnate.html">donations</a>.
+                </p>
+            </div>
 
-    </section>
+            <div class="text-container">
+                <div class="icon-title-container">
+                    <svg fill="#000000" width="800px" height="800px" viewBox="0 0 256 256" id="Flat" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M119.76074,214.80176a7.98886,7.98886,0,0,1-9.70117,5.82031l-30.13965-7.53418a16.0992,16.0992,0,0,1-6.61719-3.44727L50.752,190.03809a8,8,0,0,1,10.4961-12.07618l22.55273,19.60352,30.13965,7.53516A7.99856,7.99856,0,0,1,119.76074,214.80176Zm132.60156-95.2461a15.88206,15.88206,0,0,1-8.0664,9.38428L221.02783,140.574l-14.94678,17.48553c-.05224.061-.10937.11725-.16308.17664-.04932.05413-.09815.10785-.14844.16034-.03808.03985-.07324.08245-.1123.12152l-36.79688,36.79834a16.0981,16.0981,0,0,1-11.35058,4.67968,15.8477,15.8477,0,0,1-3.84473-.47265L95.708,185.03418a15.9025,15.9025,0,0,1-5.97559-2.918L35.7041,139.86829l-24-12.00013a16.0014,16.0014,0,0,1-7.02734-21.7163L29.26953,59.05469A16.07985,16.07985,0,0,1,50.6084,52.1499l22.375,11.18744L121.65527,49.148a16.01609,16.01609,0,0,1,11.07325.78271l32.99707,14.93067H182.1123l23.28028-11.63965A16.07317,16.07317,0,0,1,226.73047,60.127l24.59277,47.09619A15.87906,15.87906,0,0,1,252.3623,119.55566Zm-64.63916,34.26886-31.6499-23.01788L148,136.86133a40.20558,40.20558,0,0,1-48,0l-5.4209-4.06543a16.00034,16.00034,0,0,1-1.71387-24.11328L132,69.54785a16.1947,16.1947,0,0,1,1.8335-1.55548l-7.69971-3.48407L77.41016,78.71265,50.17432,130.872,99.58887,169.5127l57.957,14.48925Zm18.68311-20.76959-27.25439-52.1936h-15.1294l-.02734.002c-.0127,0-.02491-.00189-.03711-.002H143.31348l-39.13379,39.13476,5.41992,4.06543a24.1254,24.1254,0,0,0,28.80078,0l12.79981-9.60009a7.99783,7.99783,0,0,1,9.50488-.06983l38.019,27.65027Z" stroke-width="1.5" fill="#fd7800"/>
+                    </svg>
+                    <h2>Many partners around the world</h2>
+                </div>
+                <p>We are a private agency of unpaid volunteers, and all the costs of functioning are covered by the members.
+                    This means that we guaranty that all the donations we receive are only used to cover missions fees. <br>
+                    Check out how we use the <a href="donnate.html">donations</a>.
+                </p>
+            </div>
 
+        </section>
 
-    <!-- Section 2 of Main content -->
-    <section class="HP-presentation-text">
-
-        <div class="text-container no-border">
-            <img src="img/icons/reshot-icon-holding-money.svg">
-            <h2>100% of donations on the field</h2>
-            <div class="underline-bloc"></div>
-            <p>We are a private agency of unpaid volonteers, and all the costs of functioning are covered by the members.
-                This means that we guaranty that all the donations we receive are only used to cover missions fees.
-                Learn more about <a href="">our organisation</a>.
-            </p>
-        </div>
-
-
-        <div class="text-container no-border">
-            <h2>Who are we ?</h2>
-            <div class="underline-bloc"></div>
-            <p>We are a private agency of unpaid volonteers. All our members constitute a breeding ground of people who participate to our missions.</p>
-
-        </div>
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="footer-list">
             <ul>
                 <li>
-                    <a href="">Governance</a>
+                    <a href="rejoindreSOS.html">Nous rejoindre</a>
                     <a href="">Governance</a>
                     <a href="">Governance</a>
                     <a href="">Governance</a>
