@@ -24,15 +24,34 @@
         </div>
 
         <!-- Navigation Menu -->
-        <nav role="navigation" class="nav-bar">
+        <nav role="navigation" class="nav-bar nav-bar-main">
             <ul>
                 <li class="active"><a href="./" title="Go to the homepage" aria-label="Go to the homepage">Home</a></li>
                 <li><a href="about_us.html" title="See the actions" aria-label="See the actions">About Us</a></li>
-                <li><a href="#" title="Entreprise" aria-label="Entreprise section">Entreprise</a></li>
-                <li><a href="#" title="Partener" aria-label="See our parteners and material">Parteners & Material</a></li>
+                <li><a href="entreprise.html" title="Entreprise" aria-label="Entreprise section">Entreprise</a></li>
+                <li><a href="#" title="Partners & Material" aria-label="See our partners and material">Partners & Material</a></li>
                 <li class="donate-button"><a href="donnate.html" title="Make a donation" aria-label="Make a donation">Donate</a></li>
             </ul>
         </nav>
+
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <nav role="navigation" class="nav-bar">
+                    <ul>
+                        <li class="active"><a href="./" title="Go to the homepage" aria-label="Go to the homepage">Home</a></li>
+                        <li><a href="about_us.html" title="See the actions" aria-label="See the actions">About Us</a></li>
+                        <li><a href="entreprise.html" title="Entreprise" aria-label="Entreprise section">Entreprise</a></li>
+                        <li><a href="#" title="Partners & Material" aria-label="See our partners and material">Partners & Material</a></li>
+                        <li><a href="donnate.html" title="Make a donation" aria-label="Make a donation">Donate</a></li>
+                    </ul>
+                </nav>
+            </ul>
+        </div>
 
     </div>
 
@@ -43,37 +62,50 @@
 <div class="wrapper">
     <h1 class="mission-title">Our mission: </h1>
 
+    <svg class="curved-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+        <path d="M50,0 C75,50 0,50 75,100" fill="none" stroke="#fd7801" stroke-width="2" />
+    </svg>
+
     <div class="mission-presentation">
         <div class="mission-points">
-            <h3>En cas de catastrophes</h3>
-            <p>En cas de tremblements de terre, inondations, ouragan, conflits, accident industriel et bien d’autres situations d’urgence nous intervenons aussitôt pour apporter de l’aide aux populations sinistrées.</p>
+            <div class="mission-text">
+                <h3>En cas de catastrophes, une aide concrète</h3>
+                <p>En cas de tremblements de terre, inondations, ouragan, conflits, accident industriel et bien d’autres situations d’urgence nous intervenons aussitôt pour apporter de l’aide aux populations sinistrées.
+                    Nous fournissons un abri de qualité, sous la forme d’une tente de taille familiale, et d’autres équipements aux populations les plus vulnérables notamment les femmes seules avec enfants et les personnes âgées.</p>
+            </div>
+            <div class="mission-image">
+                <img src="img/header.jpg"  alt="temp image"/>
+            </div>
         </div>
+
+        <div class="mission-points reverse-row">
+            <div class="mission-text">
+                <h3>Nos équipes d’intervention et réalisations</h3>
+                <p>Une équipe de bénévoles spécialement sélectionnés et entraînés à ce type d’intervention accompagne les équipements pour les remettre en mains propres aux plus démunis, et aussi assurer le montage des abris.
+                    Notre association existe depuis septembre 2008 et grâce au soutien de nos donateurs et aux efforts de nos bénévoles nous avons pu mettre plus de 5 000 familles à l’abri en leur apportant abri et dignité.</p>
+            </div>
+            <div class="mission-image">
+                <img src="img/header.jpg"  alt="temp image"/>
+            </div>
+        </div>
+
         <div class="mission-points">
-            <h3>Une aide concrète</h3>
-            <p>Nous fournissons un abri de qualité, sous la forme d’une tente de taille familiale, et d’autres équipements aux populations les plus vulnérables notamment les femmes seules avec enfants et les personnes âgées.</p>
+            <div class="mission-text">
+                <h3>Faire un don !</h3>
+                <p>Nous ne recevons aucune subvention ou aide d’état. Nos actions et missions de terrain sont exclusivement financées par des dons privés (entreprises, écoles, particuliers, autres agences humanitaires).
+                    Un don de 300€ par exemple permet de mettre à l’abri une famille. Ce montant inclut l’achat d’une tente familiale, son acheminement et sa distribution en zone sinistrée. Cliquez ici pour faire un don.</p>
+            </div>
+            <div class="mission-image">
+                <img src="img/header.jpg"  alt="temp image"/>
+            </div>
         </div>
-        <div class="mission-points">
-            <h3>Nos équipes d’intervention</h3>
-            <p>Une équipe de bénévoles spécialement sélectionnés et entraînés à ce type d’intervention accompagne les équipements pour les remettre en mains propres aux plus démunis, et aussi assurer le montage des abris.</p>
-        </div>
-        <div class="mission-points">
-            <h3>Ressources financières</h3>
-            <p>Nous ne recevons aucune subvention ou aide d’état. Nos actions et missions de terrain sont exclusivement financées par des dons privés (entreprises, écoles, particuliers, autres agences humanitaires).</p>
-        </div>
-        <div class="mission-points">
-            <h3>Faire un don !</h3>
-            <p>Un don de 300€ par exemple permet de mettre à l’abri une famille. Ce montant inclut l’achat d’une tente familiale, son acheminement et sa distribution en zone sinistrée. Cliquez ici pour faire un don.</p>
-        </div>
-        <div class="mission-points">
-            <h3>Nos réalisations</h3>
-            <p>Notre association existe depuis septembre 2008 et grâce au soutien de nos donateurs et aux efforts de nos bénévoles nous avons pu mettre plus de 5 000 familles à l’abri en leur apportant abri et dignité.</p>
-        </div>
+
     </div>
 </div>
 
 <h1 class="mission-presentation">SOS Attitude est administré par un groupe de bénévoles répartis sur toute la France</h1>
 
-<div class="wrapper">
+<div class="wrapper" style="display: none">
     <h1 class="mission-title">Les 6 points clés à retenir</h1>
 
     <div class="mission-presentation">
