@@ -192,24 +192,7 @@ body{
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
 }
-.menu__item {
-    display: block;
-    padding: 12px 24px;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
-}
-.menu__item a{
-    text-decoration: none;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.menu__item:hover {
-    background-color: #CFD8DC;
-}
+
 
 @media screen and (min-width: 830px){
     .hamburger-menu{

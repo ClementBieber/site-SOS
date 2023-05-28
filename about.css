@@ -1,3 +1,7 @@
+body{
+  background-color: #FFEAD7;
+}
+
 .wrapper{
   margin: 0 10vw;
   position: relative;
@@ -30,7 +34,7 @@
   z-index: -1;
 }
 
-@media screen and (max-width: 1160px){
+@media screen and (max-width: 1230px){
   .curved-line{
     display: none;
   }
