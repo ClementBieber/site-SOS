@@ -1,5 +1,4 @@
 body{
-  background: radial-gradient(#00042A, rgba(0, 4, 42, 0.8))
 }
 
 .wrapper{
@@ -56,7 +55,7 @@ body{
 
 .mission-points{
   background: url("img/background_about.svg") no-repeat left / contain;
-  color: #FFFFFF;
+  color: #00042A;
   min-width: 300px;
   display: flex;
   flex-flow: row wrap;
@@ -66,8 +65,8 @@ body{
 }
 
 .reverse-row{
-  background-position: right;
   flex-flow: row-reverse wrap;
+  background-position: right;
 }
 
 .mission-text{
@@ -86,7 +85,7 @@ body{
 .mission-text h3::after {
   content: "";
   position: absolute;
-  background-color: #fd7801;
+  background-color: #00042a;
   width: 70%;
   height: 10px;
   bottom: -15px; /* Adjust the distance from the text as needed */
