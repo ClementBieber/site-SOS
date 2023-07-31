@@ -1,5 +1,6 @@
 body{
-  background: radial-gradient(#00042A, rgba(0, 4, 42, 0.8))
+  /*background: radial-gradient(#00042A, rgba(0, 4, 42, 0.8))*/
+  background: #00042a;
 }
 
 .wrapper{
@@ -45,6 +46,7 @@ body{
 .mission-title{
   text-align: center;
   width: 100%;
+  color: #FFFFFF;
 }
 
 .mission-presentation{
@@ -55,7 +57,7 @@ body{
 }
 
 .mission-points{
-  background: url("img/background_about.svg") no-repeat left / contain;
+  /*background: url("img/background_about.svg") no-repeat left / contain;*/
   color: #FFFFFF;
   min-width: 300px;
   display: flex;
