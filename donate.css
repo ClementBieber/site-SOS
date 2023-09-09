@@ -1,0 +1,21 @@
+body{
+  background: #ffffff
+}
+
+.spacing{
+  margin-top: 10vh;
+}
+
+.hello-frame{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  margin: 0 5vw;
+}
+
+.hello-frame iframe{
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
