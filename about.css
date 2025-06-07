@@ -1,11 +1,10 @@
 body{
-  /*background: radial-gradient(#00042A, rgba(0, 4, 42, 0.8))*/
-  background: url("texture/light-gray-concrete-wall.jpg") rgba(0, 4, 42);
+  background: url("texture/grain.png") rgb(253, 120, 0, 0.05);
   background-blend-mode: multiply;
 }
 
 .wrapper{
-  padding: 5vh 10vw 0;
+  padding: 10vh 10vw 0;
   position: relative;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.1) 0%, transparent 20%),
   linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, transparent 20%);
@@ -13,17 +12,13 @@ body{
 
 @media screen and (min-width: 1600px) {
   .wrapper{
-    padding: 5vh 15vw 0;
+    padding: 10vh 15vw 0;
   }
 }
 
 @media screen and (min-width: 2000px) {
   .wrapper{
-    padding: 5vh 20vw 0;
-  }
-
-  .mission-image {
-    max-width: 28vw;
+    padding: 10vh 20vw 0;
   }
 }
 
@@ -33,111 +28,101 @@ body{
   }
 }
 
-.curved-line {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translateX(-50%);
-  pointer-events: none;
-  z-index: 1;
-}
-
-@media screen and (max-width: 1230px){
-  .curved-line{
-    display: none;
-  }
-}
-
-
 .mission-title{
   text-align: center;
   width: 100%;
-  color: #FFFFFF;
+  color: black;
 }
 
 .mission-presentation{
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   justify-content: space-between;
   gap: 3vh;
 }
 
-.mission-points{
-  /*background: url("img/background_about.svg") no-repeat left / contain;*/
-  background: radial-gradient(ellipse, rgba(253, 120, 1, 0.8) 0%, transparent 70%);
-  color: #FFFFFF;
+/* Container for the entire card */
+.card-container {
+  /*position: relative;*/
+  flex: 1 1 30%;
   min-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  gap: 2vw;
-  padding: 5%;
+  flex-direction: column;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  background: url("img/header.jpg") no-repeat center;
+  background-size: cover;
 }
 
-@media screen and (max-width: 1230px){
-  .mission-points{
-    background: none;
-  }
+.card-container:hover {
+  transform: translateY(-5px);
 }
 
-.reverse-row{
-  background-position: right;
-  flex-flow: row-reverse wrap;
-}
-
-.mission-text{
-  flex: 2;
-  height: auto;
-  margin: 0 auto;
-  min-width: 450px;
-  z-index: 5;
-}
-
-.mission-text h3{
-  position: relative;
-  font-size: 4rem;
-}
-
-.mission-text h3::after {
-  content: "";
-  position: absolute;
-  background-color: #fd7801;
-  width: 70%;
-  height: 10px;
-  bottom: -15px; /* Adjust the distance from the text as needed */
-  left: 25%; /* Adjust the shift to the right as needed */
-}
-
-.mission-text p{
-  font-size: 2.5rem;
-}
-
-.mission-text a{
+/* Top section for initial text (20% height) */
+.top-text-section {
+  height: 20%;
+  background-color: rgba(253, 120, 0, 0.7);
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 3rem;
 }
 
-.mission-image {
-  flex: 3;
-  width: auto;
-  min-width: 450px;
-  z-index: 5;
+/* Image section (remaining 80% height) */
+.image-section {
+  position: relative;
+  height: 80%;
+  overflow: hidden;
 }
 
-.mission-image img{
+/* The main image */
+.main-image {
   width: 100%;
-  border-radius: 50%;
+  height: 100%;
   object-fit: cover;
+  transition: filter 0.4s ease-in-out;
 }
 
-@media screen and (max-width: 600px){
-  .mission-text{
-    min-width: 300px;
-  }
+/* Overlay for text that appears on hover */
+.hover-text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(253, 120, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.6;
+  cursor: pointer;
+  box-sizing: border-box;
+}
 
-  .mission-image {
+.hover-text-overlay a {
+  color: #fd7800;
+}
 
-    min-width: 300px;
-  }
+/* Styles applied when the card container is hovered */
+.card-container:hover .hover-text-overlay {
+  opacity: 1;
+}
+
+.card-container:hover .main-image {
+  filter: blur(8px) brightness(0.8);
 }
