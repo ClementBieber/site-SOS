@@ -37,8 +37,9 @@ body{
     background-color: rgba(255, 120, 1, 0.70);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    border-bottom: 1px solid rgba(0, 4, 42, 0.5);
+    /*border-bottom: 1px solid rgba(0, 4, 42, 0.5);*/
     z-index: 55;
+    box-shadow: 0 4px 64px 0 rgba(255, 120, 1, 0.25);
 }
 
 .logo a{
@@ -89,7 +90,7 @@ body{
 }
 
 .nav-bar li:hover{
-    background: #FFF;
+    background: rgba(255, 255, 255, 0.9);
     border-left: 0;
     text-decoration: 0;
 }
@@ -101,7 +102,9 @@ body{
 }
 
 .donate-button:hover{
-    border-radius: 1px;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    transition: 0.2s;
 }
 
 .donate-button a{
@@ -289,15 +292,11 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
-}
-
-.bandeau-text .main-text{
-    font-size: 5rem;
+    color: #fd7800;
 }
 
 .bandeau-text p{
     font-size: 2.5rem;
-    text-align: center;
 }
 
 

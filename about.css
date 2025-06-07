@@ -16,11 +16,6 @@ body{
   }
 }
 
-@media screen and (min-width: 2000px) {
-  .wrapper{
-    padding: 10vh 20vw 0;
-  }
-}
 
 @media screen and (max-width: 800px){
   .wrapper{
@@ -45,9 +40,9 @@ body{
 .card-container {
   /*position: relative;*/
   flex: 1 1 30%;
+  height: 50vh;
   min-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
@@ -56,6 +51,8 @@ body{
   transition: transform 0.3s ease-in-out;
   background: url("img/header.jpg") no-repeat center;
   background-size: cover;
+  container-type: inline-size; /* Allows querying based on width */
+  container-name: card-container-call;
 }
 
 .card-container:hover {
@@ -65,7 +62,9 @@ body{
 /* Top section for initial text (20% height) */
 .top-text-section {
   height: 20%;
-  background-color: rgba(253, 120, 0, 0.7);
+  background-color: rgba(253, 120, 0, 0.6);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   color: white;
   display: flex;
   align-items: center;
@@ -73,7 +72,7 @@ body{
   padding: 1rem;
   text-align: center;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 /* Image section (remaining 80% height) */
@@ -93,29 +92,32 @@ body{
 
 /* Overlay for text that appears on hover */
 .hover-text-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  background-color: rgba(253, 120, 0, 0.7);
+  background-color: rgba(253, 120, 0, 0.6);
   display: flex;
   align-items: center;
-  justify-content: center;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   color: #ffffff;
   text-align: center;
+  font-size: 1.6rem;
   padding: 1.5rem;
-  font-size: 2rem;
   font-weight: 500;
   line-height: 1.6;
   cursor: pointer;
-  box-sizing: border-box;
+}
+
+@container card-container-call (min-width: 400px){
+  .top-text-section {
+    font-size: 3.5rem;
+  }
+  .hover-text-overlay {
+    font-size: 2.2rem;
+  }
 }
 
 .hover-text-overlay a {
-  color: #fd7800;
+  color: #ffffff;
 }
 
 /* Styles applied when the card container is hovered */
@@ -123,6 +125,7 @@ body{
   opacity: 1;
 }
 
-.card-container:hover .main-image {
-  filter: blur(8px) brightness(0.8);
+.card-container:hover .hover-text-overlay {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
