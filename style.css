@@ -40,7 +40,7 @@ body{
     -webkit-backdrop-filter: blur(5px);
     /*border-bottom: 1px solid rgba(0, 4, 42, 0.5);*/
     z-index: 55;
-    box-shadow: 0 4px 64px 0 rgba(255, 120, 1, 0.25);
+    box-shadow: 0 1px 50px 0 rgba(255, 120, 1, 0.5);
 }
 
 .logo a{
@@ -294,7 +294,7 @@ body{
     font-weight: bold;
     letter-spacing: 0.2rem;
     margin: 0;
-    padding-top: 5vh;
+    padding: 5vh 0;
     color: #fd7800;
 }
 
@@ -387,37 +387,144 @@ body{
     width: 15%;
 }
 
-
 /*****************************/
 /* Styling Footer sections   */
 /*****************************/
 
-.footer{
+.footer {
+    background: #0a0601; /* Dark background */
+    color: #ffffff;
+    padding: 4rem 2rem 2rem; /* Top padding, side padding, bottom padding */
+    font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center; /* Default for mobile */
+}
+
+.footer-content {
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
     justify-content: space-around;
-    background: #0a0601;
-    border-top: dotted #fd7800 2px;
+    gap: 10rem; /* Space between columns */
+    margin: 0 10vw; /* Center the content */
+    padding-bottom: 2rem;
 }
 
-.footer-list{
-    padding: 0.5vh;
+.footer-section {
+    flex: 1 1 300px; /* Allow sections to grow/shrink, min-width 300px */
+    margin-bottom: 2rem; /* Space between sections on wrapped layout */
 }
 
-.footer li{
-    display: flex;
-    flex-flow: column wrap;
-    gap: 1rem;
+.footer-section h3 {
+    color: #fd7800; /* Orange color for headings */
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    position: relative; /* For the underline effect */
+    display: inline-block; /* To make the underline fit the text */
 }
 
-.footer a{
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    left: 50%; /* Center the pseudo-element */
+    transform: translateX(-50%); /* Adjust for perfect centering */
+    bottom: -0.5rem; /* Distance from text */
+    width: 60%; /* Width of the underline */
+    height: 3px;
+    background-color: #fd7800;
+    border-radius: 2px;
+}
+
+.footer-section p {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-section a {
+    color: #ffffff;
     text-decoration: none;
-    /*color: white;*/
-    color: #ffffff;
-    font-size: 2rem;
+    transition: color 0.3s ease-in-out;
+    font-size: 1.8rem;
 }
 
-.footer-text{
-    color: #ffffff;
-    /*color: white;*/
+.footer-section a:hover {
+    color: #fd7800; /* Orange hover effect */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Center icons on mobile */
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-links img {
+    width: 32px; /* Adjust size as needed */
+    height: 32px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: translateY(-3px); /* Subtle lift on hover */
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    padding-top: 2rem;
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive adjustments for desktop */
+@media screen and (min-width: 768px) {
+    .footer-section {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .footer-section h3::after {
+        left: 0; /* Align underline to left for desktop */
+        transform: translateX(0);
+    }
+
+    .social-links {
+        justify-content: flex-start; /* Align icons to left for desktop */
+    }
+}
+
+/* Responsive adjustments for smaller mobile screens */
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 3rem 1.5rem 1.5rem;
+    }
+
+    .footer-content {
+        gap: 2rem;
+    }
+
+    .footer-section h3 {
+        font-size: 2rem;
+    }
+
+    .footer-section p,
+    .footer-section a {
+        font-size: 1.6rem;
+    }
+
+    .social-links img {
+        width: 28px;
+        height: 28px;
+    }
 }
