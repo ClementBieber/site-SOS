@@ -98,7 +98,7 @@
 }
 
 .benefit-item {
-    background-color: #f8f8f8; /* A very light grey for individual cards, providing subtle contrast */
+    background: url("texture/grain.png") rgba(248, 248, 248, 0.7); /* A very light grey for individual cards, providing subtle contrast */
     border-radius: 1rem; /* Rounded corners for a softer look */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
     padding: 2.5rem;
@@ -149,6 +149,29 @@
     color: #555; /* Slightly muted text color for body text */
     margin: 0; /* Remove default paragraph margins */
     line-height: 1.6; /* Good line height for readability */
+}
+
+.experience-list {
+    list-style: none; /* Remove default list bullets */
+}
+
+.experience-list li {
+    font-size: 1.7rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+    position: relative;
+}
+
+.experience-list li::before {
+    content: '\2022'; /* Unicode for a solid circle (bullet) */
+    color: #fd7800; /* Orange color for the bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 20px; /* Width of the custom bullet area */
+    margin-left: -25px; /* Pull bullet to the left */
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /* Responsive adjustments for tablets */
@@ -206,128 +229,11 @@
 }
 
 /*****************************/
-/* SOS Experience Section    */
+/* Styling Contact Section   */
 /*****************************/
 
-.sos-experience-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 3rem; /* Space between the items */
-    margin: 5vh 0;
-}
-
-.experience-item {
-    background-color: #FFFFFF; /* White background for individual cards */
-    border-radius: 1rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Standard shadow for card effect */
-    padding: 2.5rem;
-    flex: 1 1 calc(33% - 3rem); /* Three columns on desktop */
-    min-width: 300px; /* Minimum width for each card */
-    text-align: left; /* Align text to the left within the card */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.experience-item:hover {
-    transform: translateY(-5px); /* Subtle lift on hover */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
-}
-
-.experience-title {
-    color: #fd7800; /* Your primary orange color for titles */
-    font-size: 2.8rem; /* Larger font size for prominence */
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-    font-weight: 700; /* Bold */
-    line-height: 1.3;
-}
-
-.experience-item p {
-    font-size: 1.7rem; /* Readable paragraph text */
-    color: #444; /* Slightly darker text for contrast */
-    line-height: 1.6;
-    margin-bottom: 1.5rem; /* Space below paragraph */
-}
-
-.experience-list {
-    list-style: none; /* Remove default list bullets */
-}
-
-.experience-list li {
-    font-size: 1.7rem;
-    color: #555;
-    margin-bottom: 0.8rem;
-    position: relative;
-}
-
-.experience-list li::before {
-    content: '\2022'; /* Unicode for a solid circle (bullet) */
-    color: #fd7800; /* Orange color for the bullet */
-    font-weight: bold;
-    display: inline-block;
-    width: 20px; /* Width of the custom bullet area */
-    margin-left: -25px; /* Pull bullet to the left */
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-/* Responsive adjustments for tablets */
-@media screen and (max-width: 1024px) {
-    .sos-experience-section {
-        padding: 6vh 4vw;
-        gap: 2.5rem;
-    }
-    .experience-item {
-        flex: 1 1 calc(50% - 2.5rem); /* Two columns on tablets */
-        padding: 2rem;
-    }
-    .experience-title {
-        font-size: 2.4rem;
-    }
-    .experience-item p, .experience-list li {
-        font-size: 1.6rem;
-    }
-}
-
-/* Responsive adjustments for small mobile devices */
-@media screen and (max-width: 768px) {
-    .sos-experience-section {
-        padding: 4vh 3vw;
-        gap: 2rem;
-        margin: auto;
-    }
-    .experience-item {
-        flex: 1 1 100%; /* Single column on small mobiles */
-        padding: 1.8rem;
-    }
-    .experience-title {
-        font-size: 2.2rem;
-        text-align: center; /* Center title on mobile */
-    }
-    .experience-item p, .experience-list li {
-        font-size: 1.5rem;
-    }
-    .experience-list li {
-        padding-left: 20px; /* Adjust bullet padding */
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 90%; /* Constrain list width for better readability */
-    }
-}
-
-/* Further adjustments for very small screens */
-@media screen and (max-width: 480px) {
-    .experience-title {
-        font-size: 2rem;
-    }
-    .experience-item p, .experience-list li {
-        font-size: 1.4rem;
-    }
-}
-
 .contact-section {
-    margin: 3vh 0;
+    margin: 5vh 0;
     display: flex;
     justify-content: center;
     gap: 2vw;
