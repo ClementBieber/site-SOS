@@ -37,8 +37,8 @@
 
 /* Container for the entire card */
 .card-container {
-  /*position: relative;*/
-  flex: 1 1 30%;
+  box-sizing: border-box;
+  flex: 1;
   height: 50vh;
   min-width: 300px;
   min-height: 400px;
@@ -48,10 +48,23 @@
   overflow: hidden;
   box-shadow: 1px 5px 50px 1px rgba(253, 120, 0, 0.2), 1px 10px 30px 1px rgb(0, 0, 0);
   transition: transform 0.3s ease-in-out;
-  background: url("img/header.jpg") no-repeat center;
-  background-size: cover;
   container-type: inline-size; /* Allows querying based on width */
   container-name: card-container-call;
+}
+
+.catastrophe-card{
+  background: url("img/illustrations/cyclone.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.intervention-card{
+  background: url("img/illustrations/tentes.webp") no-repeat center;
+  background-size: cover;
+}
+
+.soutenir-card{
+  background: url("img/illustrations/guatemala.jpg") no-repeat center;
+  background-size: cover;
 }
 
 .card-container:hover {
@@ -61,7 +74,7 @@
 /* Top section for initial text (20% height) */
 .top-text-section {
   height: 20%;
-  background-color: rgba(253, 120, 0, 0.6);
+  background-color: rgba(253, 120, 0, 0.7);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   color: white;
@@ -92,7 +105,7 @@
 /* Overlay for text that appears on hover */
 .hover-text-overlay {
   height: 100%;
-  background-color: rgba(253, 120, 0, 0.6);
+  background-color: rgba(253, 120, 0, 0.7);
   display: flex;
   align-items: center;
   opacity: 0;
@@ -106,7 +119,7 @@
   cursor: pointer;
 }
 
-@container card-container-call (min-width: 400px){
+@container card-container-call (min-width: 500px){
   .top-text-section {
     font-size: 3.5rem;
   }

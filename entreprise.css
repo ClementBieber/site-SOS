@@ -205,8 +205,6 @@
     }
 }
 
-
-
 /*****************************/
 /* SOS Experience Section    */
 /*****************************/
@@ -297,6 +295,7 @@
     .sos-experience-section {
         padding: 4vh 3vw;
         gap: 2rem;
+        margin: auto;
     }
     .experience-item {
         flex: 1 1 100%; /* Single column on small mobiles */
@@ -328,21 +327,49 @@
 }
 
 .contact-section {
-    background: url("texture/grain.png") rgb(253, 120, 0);
     margin: 3vh 0;
     display: flex;
     justify-content: center;
+    gap: 2vw;
     border-radius: 5rem;
     font-weight: bold;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
 }
 
 .contact-section h2 {
-    color: #ffffff;
+    color: #fd7800;
 }
 
 .contact-section a {
-    color: #000000;
+    display: flex;
+    align-items: center;
+    background: url("texture/grain.png") rgb(253, 120, 0);
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 0 2rem;
+    border-radius: 5rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-section a:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+@media screen and (max-width: 480px) {
+    .contact-section {
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .contact-section h2 {
+        text-align: center;
+    }
+
+    .contact-section a {
+        padding: 2rem 0;
+        justify-content: center;
+    }
 }
