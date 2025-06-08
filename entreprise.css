@@ -78,16 +78,6 @@
     color: #333; /* Default text color for readability */
 }
 
-.section-title {
-    color: #fd7800; /* Your primary orange color for main titles */
-    text-align: center;
-    font-size: 5rem; /* Large and impactful, consistent with other main titles */
-    margin-bottom: 4rem; /* Space below the title */
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-}
-
 .benefits-grid {
     display: flex;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
@@ -98,7 +88,7 @@
 }
 
 .benefit-item {
-    background: url("texture/grain.png") rgba(248, 248, 248, 0.7); /* A very light grey for individual cards, providing subtle contrast */
+    background: url("texture/grain.png") rgba(248, 248, 248, 0.5); /* A very light grey for individual cards, providing subtle contrast */
     border-radius: 1rem; /* Rounded corners for a softer look */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
     padding: 2.5rem;

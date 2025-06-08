@@ -24,6 +24,24 @@ body{
     }
 }
 
+.wrapper{
+    padding: 10vh 10vw 0;
+    position: relative;
+}
+
+@media screen and (min-width: 1600px) {
+    .wrapper{
+        padding: 10vh 15vw 0;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .wrapper{
+        background: none;
+    }
+}
+
 .separator{
     height: 5vh;
 }
