@@ -326,3 +326,23 @@
         font-size: 1.4rem;
     }
 }
+
+.contact-section {
+    background: url("texture/grain.png") rgb(253, 120, 0);
+    margin: 3vh 0;
+    display: flex;
+    justify-content: center;
+    border-radius: 5rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.contact-section h2 {
+    color: #ffffff;
+}
+
+.contact-section a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
