@@ -280,7 +280,7 @@ body{
 
 .image-subtext{
     font-size: 3rem;
-    background: rgba(0, 4, 42, 0.7);
+    background: rgba(85, 85, 85, 0.6);
     border-radius: 3rem;
     width: fit-content;
 }
