@@ -269,16 +269,13 @@ body{
     padding-left: 8vw;
     color: #ffffff;
     overflow-block: hidden;
+    font-weight: 750;
 }
 
 .image-text h1{
     font-size: 8rem;
     min-font-size: 30px;
     margin: 0;
-    font-weight: 750;
-    line-height: 15rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
 }
 
 .image-subtext{
@@ -294,7 +291,6 @@ body{
 
 @media screen and (min-width: 800px) {
     .image-text h1{
-        font-weight: 750;
         line-height: 15rem;
         letter-spacing: 0.2rem;
         text-transform: uppercase;
