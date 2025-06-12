@@ -17,6 +17,7 @@
     flex: 1 1 calc(33% - 3rem); /* Distribute items into three columns on desktop, accounting for gap */
     align-items: flex-start; /* Align icon and content at the top */
     text-align: left; /* Align text content to the left */
+    min-width: 280px; /* Minimum width for the cards */
 }
 
 .benefit-icon {
@@ -86,9 +87,6 @@
     .benefit-item {
         flex: 1 1 calc(50% - 2.5rem); /* Two columns on tablets */
     }
-    .section-title {
-        font-size: 4rem; /* Adjust title size for tablets */
-    }
     .benefit-title {
         font-size: 2.2rem; /* Adjust benefit title size for tablets */
     }
@@ -99,10 +97,7 @@
     .company-benefits-section {
         padding: 6vh 3vw; /* Adjust padding for smaller screens */
     }
-    .section-title {
-        font-size: 3.5rem; /* Further adjust title size */
-        margin-bottom: 3rem;
-    }
+
     .benefits-grid {
         gap: 2rem;
     }
@@ -122,13 +117,6 @@
     }
     .benefit-item p {
         font-size: 1.5rem; /* Adjust paragraph size */
-    }
-}
-
-/* Responsive adjustment for very small screens */
-@media screen and (max-width: 480px) {
-    .section-title {
-        font-size: 3rem; /* Smallest title size for very small screens */
     }
 }
 
