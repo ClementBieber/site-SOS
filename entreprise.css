@@ -1,78 +1,4 @@
 
-/*****************************/
-/* Styling Mission Points    */
-/*****************************/
-
-.mission-title {
-    color: #fd7800; /* Use your primary orange color */
-    text-align: center;
-    width: 100%;
-    font-size: 5rem; /* Adjust as needed for impact */
-    margin-bottom: 4rem; /* Space below the title */
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-}
-
-.mission-presentation {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center; /* Center items when they wrap */
-    gap: 2.5rem; /* Space between the mission point cards */
-    max-width: 1200px; /* Limit width for larger screens */
-    margin: 0 auto; /* Center the entire block */
-    padding: 0 2rem; /* Add some horizontal padding */
-}
-
-.mission-points {
-    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
-    border-radius: 1rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    padding: 2.5rem;
-    flex: 1 1 calc(33% - 2.5rem); /* Three columns on desktop, responsive */
-    min-width: 280px; /* Minimum width for the cards */
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    display: flex; /* Use flexbox for vertical alignment */
-    align-items: center; /* Vertically center content */
-    justify-content: center; /* Horizontally center content */
-}
-
-.mission-points:hover {
-    transform: translateY(-8px); /* Lift effect on hover */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-.mission-points p {
-    font-size: 1.8rem; /* Readable font size for the text */
-    color: #333; /* Darker text for readability on light background */
-    margin: 0; /* Remove default paragraph margin */
-}
-
-/* Responsive adjustments for mission points */
-@media screen and (max-width: 1024px) {
-    .mission-points {
-        flex: 1 1 calc(50% - 2.5rem); /* Two columns on tablets */
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .mission-title {
-        font-size: 3.5rem;
-        margin-bottom: 3rem;
-    }
-    .mission-presentation {
-        gap: 2rem;
-    }
-    .mission-points {
-        flex: 1 1 90%; /* Single column on small mobiles */
-        padding: 2rem;
-    }
-    .mission-points p {
-        font-size: 1.6rem;
-    }
-}
-
 /* Styling for the new company benefits section */
 .company-benefits-section {
     color: #333; /* Default text color for readability */
@@ -88,21 +14,9 @@
 }
 
 .benefit-item {
-    background: url("texture/grain.png") rgba(248, 248, 248, 0.5); /* A very light grey for individual cards, providing subtle contrast */
-    border-radius: 1rem; /* Rounded corners for a softer look */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Subtle shadow for depth */
-    padding: 2.5rem;
     flex: 1 1 calc(33% - 3rem); /* Distribute items into three columns on desktop, accounting for gap */
-    min-width: 280px; /* Minimum width before items wrap to the next line */
-    display: flex; /* Use flexbox for icon and text alignment */
     align-items: flex-start; /* Align icon and content at the top */
     text-align: left; /* Align text content to the left */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
-}
-
-.benefit-item:hover {
-    transform: translateY(-8px); /* Lift the card slightly on hover */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover for a more prominent effect */
 }
 
 .benefit-icon {

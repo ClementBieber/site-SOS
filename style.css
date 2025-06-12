@@ -364,20 +364,44 @@ body{
 .HP-presentation-text{
     margin: 0 auto;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: wrap;
+    justify-content: space-evenly;
     padding: 5vh 0;
     width: 80vw;
-    gap: 2vh;
+    gap: 3vh 0;
 }
 
 .text-container{
-    display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    width: 30vw;
+    gap: 1rem;
+}
+
+.card-white{
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 2.5rem;
+    min-width: 280px; /* Minimum width for the cards */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex; /* Use flexbox for vertical alignment */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    height: 100%;
+}
+
+.card-white:hover {
+    transform: translateY(-8px); /* Lift the card slightly on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover for a more prominent effect */
+}
+
+.clickable-card{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    /*flex: 1 1 calc(50% - 3rem);*/
+    width: 40%;
     min-width: 300px;
-    gap: 5px;
 }
 
 .text-container h2{
@@ -389,13 +413,10 @@ body{
     font-size: 2rem;
     margin: 0;
     line-height: 1.5;
+    flex-grow: 1;
 }
 
 .text-container p .orange{
-    color: #fd7800;
-}
-
-.text-container a{
     color: #fd7800;
 }
 
@@ -434,7 +455,6 @@ body{
     }
 
     .text-container p{
-        text-align: justify;
         font-size: 2rem;
     }
 }
